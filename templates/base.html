@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College DGU</title>
+    <link rel="stylesheet" href="{% static 'sass/app.css' %}">
+    <link rel="stylesheet" href="{% static 'sass/reset.css' %}">
+</head>
+<body>
+    <header class="header">
+        <nav class="header_menu_container">
+            <img class="dgu_logo" src="{% static 'img/logo_dgu.png' %}" alt="">
+            <ul class="header_menu_list">
+                <li class="header_menu_item">Главная</li>
+                <li class="header_menu_item">О колледже</li>
+                <li class="header_menu_item">Расписание</li>
+                <li class="header_menu_item">О преподавателях</li>
+                <li class="header_menu_item">8-(722) 67-42-65</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main_page">
+        <aside class="aside">
+            <h1 class="aside_title">Контактная информация</h1>
+            <div class="aside_line"></div>
+            <ul class="aside_logos">
+                <li class="logo"><a href="https://t.me/colledgedsu"><img src="{% static 'img/telegram1.png' %}" alt="telegram"></a></li>
+                <li class="logo"><a href="https://vk.com/mediaclubcollegedgu?from=quick_search"><img src="{% static 'img/vk.svg' %}" alt="vk"></a></li>
+            </ul>
+        </aside>
+        {% block content %}  {% endblock %}
+    </div>
+
+     <footer class="footer">
+        <div class="contact_form">
+            <h1 class="form_title">Контакты</h1>
+            <h2 class="form_name"><span>Наименование:</span><br>Колледж федерального государственного бюджетного образовательного учреждения высшего образования «Дагестанский государственный университет».</h2>
+            <h3 class="short_name"><span>Сокращенное наименование</span> – Колледж ДГУ.</h3>
+            <h4 class="form_email"><span>Почтовый адрес:</span> 67000, Россия, Республика Дагестан, г. Махачкала,<br>ул. Дзержинского, 21</h4>
+            <h5 class="form_phone_number"><span>Телефон:</span> 8-(722) 67-42-65</h5>
+            <h6 class="form_mail"><span>E-mail:</span> collegedsu@mail.ru</h6>
+        </div>
+        <iframe class="header-map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1459.488594269916!2d47.49721647124244!3d42.97875416425313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNDLCsDU4JzQzLjUiTiA0N8KwMjknNTIuNyJF!5e0!3m2!1sru!2sru!4v1694902873032!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+
+    <script src="{% static 'scripts/index.js' %}"></script>
+</body>
+</html>

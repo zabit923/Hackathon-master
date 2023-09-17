@@ -1,0 +1,236 @@
+::selection {
+  background: #00B7FF;
+  color: rgb(0, 0, 0);
+ }
+
+::-webkit-scrollbar-thumb{
+  background: #000000;
+  border-radius: 15px;
+}
+
+::-webkit-scrollbar-track{
+  background: #343434;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+@media (prefers-reduced-motion: no-preference){
+  :root { scroll-behavior: smooth;
+
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+.header_menu_container {
+  height: 100px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.6;
+}
+.header_menu_container > .dgu_logo {
+  width: 80px;
+  margin: 10px;
+  position: absolute;
+}
+.header_menu_container > .header_menu_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 40px;
+}
+.header_menu_container > .header_menu_list > .header_menu_item {
+  cursor: pointer;
+}
+
+.aside_title {
+  color: #fff;
+  transform: rotate(-90deg);
+  width: 220px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  position: absolute;
+  left: -105px;
+  top: 200px;
+  padding-top: 80px;
+}
+
+.aside_line {
+  color: #000;
+  height: 3px;
+  width: 60px;
+  background-color: #fff;
+  transform: rotate(-90deg);
+  margin-left: 18px;
+  position: absolute;
+  top: 500px;
+}
+
+.aside_logos {
+  height: 120px;
+  width: 30px;
+  margin-left: 35px;
+  position: absolute;
+  top: 600px;
+}
+.aside_logos > .logo {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.main_news {
+  color: #00b7ff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  position: absolute;
+  left: 400px;
+  top: 150px;
+}
+
+.main_container {
+  height: 500px;
+  width: 1200px;
+  margin: 50px 0 0 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main_container > .left_side_main {
+  height: 500px;
+  width: 500px;
+  margin-top: 70px;
+}
+.main_container > .left_side_main > .news_title {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 38px;
+  font-weight: 400;
+  height: 208px;
+  line-height: 52px;
+  margin-top: 50px;
+}
+
+
+.main_container > .left_side_main > .news_text {
+  margin-top: 60px;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.main_container > .left_side_main > .news_btn {
+  height: 48px;
+  width: 182px;
+  border: 1px solid black;
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.main_container > .left_side_main > .next_news {
+  background-color: #00b7ff;
+  color: white;
+  height: 48px;
+  width: 182px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  border-radius: 7px;
+}
+.main_container > .right_side_main img {
+  width: 500px;
+}
+
+.contact_form {
+  width: 600px;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  padding: 50px 0 0 50px;
+}
+.contact_form > .form_title {
+  color: #00b7ff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.contact_form > .form_name {
+  margin-top: 40px;
+  line-height: 23px;
+}
+.contact_form > .short_name, .contact_form .form_phone_number, .contact_form .form_mail {
+  margin-top: 10px;
+}
+.contact_form > .form_email {
+  margin-top: 10px;
+  line-height: 23px;
+}
+.contact_form > .form_mail {
+  cursor: pointer;
+}
+
+span {
+  color: #00b7ff;
+}
+
+.header-map {
+  height: 640px;
+  width: 50%;
+  margin-top: 10px;
+}
+
+body {
+  background-image: url("../img/college.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header {
+  height: -moz-max-content;
+  height: max-content;
+  width: 100%;
+}
+
+.aside {
+  height: 650px;
+  width: 100px;
+  background-color: #000;
+  opacity: 0.6;
+}
+
+.main_page {
+  display: flex;
+}
+
+.footer {
+  height: 650px;
+  width: 100%;
+  background-color: #111111;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}/*# sourceMappingURL=app.css.map */

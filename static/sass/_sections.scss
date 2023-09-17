@@ -1,0 +1,27 @@
+@import "core";
+
+body{
+    @include bg_img(url('../img/college.png'), 100%);
+}
+
+.header{
+    @include size(100%, max-content);
+}
+
+.aside {
+    @include size(100px, 650px);
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.main_page{
+    display: flex;
+}
+
+.footer{
+    height: 650px;
+    width: 100%;
+    background-color: #111111;
+    @include flex();
+
+}
